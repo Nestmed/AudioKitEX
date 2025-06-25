@@ -7,7 +7,7 @@ let package = Package(
     name: "AudioKitEX",
     platforms: [.macOS(.v12), .iOS(.v13), .tvOS(.v13)],
     products: [.library(name: "AudioKitEX", targets: ["AudioKitEX"])],
-    dependencies: [.package(url: "https://github.com/edelabar/AudioKit", branch: "nestmed-changes")],
+    dependencies: [.package(url: "https://github.com/Nestmed/AudioKit", branch: "nestmed-changes")],
     targets: [
         .target(name: "AudioKitEX", dependencies: ["AudioKit", "CAudioKitEX"]),
         .target(name: "CAudioKitEX", cxxSettings: [.headerSearchPath(".")]),
